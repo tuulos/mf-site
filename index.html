@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Metaflow</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- og tags -->
+    <meta property="og:title" content="Metaflow" />
+    <meta property="og:url" content="http://www.metaflow.org/" />
+    <meta
+      property="og:description"
+      content="A framework for real-life data science."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="https://www.example.com/og-image.jpg" /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- meta tags -->
+    <meta
+      name="description"
+      content="A framework for real-life data science."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="section header">
+      <img alt="Metaflow" width="144" height="24" src="/images/metaflow.svg" />
+      <nav>
+        <a href="https://docs.metaflow.org/getting-started/tutorials"
+          >Tutorial</a
+        >
+        <a href="https://docs.metaflow.org/">Documentation</a>
+        <a href="https://github.com/Netflix/metaflow">Github</a>
+        <a id="sandbox-link" href="https://outerbounds.com/docs/sandbox/">Try in the browser</a>
+      </nav>
+    </header>
+    <div class="section">
+      <div class="hero">
+        <div>
+          <h1 style="max-width: 480px">
+            A framework for real-life data science and ML
+          </h1>
+          <p style="max-width: 480px">
+            Open-source Metaflow makes it quick and easy to build and manage real-life data
+            science and ML projects.
+          </p>
+          <div class="button-group">
+            <a
+              class="button button-primary"
+              href="https://docs.metaflow.org/getting-started/install"
+              >Get Started</a
+            >
+            <a
+              class="button button-secondary"
+              href="http://slack.outerbounds.co/"
+              >Join Community</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="hero-image">
+            <img src="/images/hero/interface.webp" id="interface" alt="" />
+            <img src="/images/hero/highlight.webp" id="highlight" alt="" />
+          </div>
+          <div class="scroll" id="scroller">
+            <div class="scroll-controls">
+              <button id="prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline
+                    points="48 160 128 80 208 160"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                </svg>
+              </button>
+              <button id="next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline
+                    points="208 96 128 176 48 96"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                </svg>
+              </button>
+            </div>
+            <ul id="list_container">
+              <li>
+                  <img src="/images/hero/modeling.svg" alt="" />
+                  <div>
+                    <p>Modeling</p>
+                    <small>
+                      Use any Python libraries for models and business logic. Metaflow
+                      helps manage library dependencies, locally and in the cloud.
+                      </small>
+                  </div>
+              </li>
+              <li>
+                  <img src="/images/hero/deployment.svg" alt="" />
+                  <div>
+                    <p>Deployment</p>
+                    <small>
+                      Deploy workflows to production with a single command and
+                      integrate with surrounding systems seamlessly.
+                    </small>
+                  </div>
+              </li>
+              <li>
+                  <img src="/images/hero/versioning.svg" alt="" />
+                  <div>
+                    <p>Versioning</p>
+                    <small>
+                      Metaflow tracks and stores variables inside the flow
+                      automatically for easy experiment tracking and debugging.
+                      </small>
+                  </div>
+              </li>
+              <li>
+                  <img src="/images/hero/orchestration.svg" alt="" />
+                  <div>
+                    <p>Orchestration</p>
+                    <small>
+                      Create robust workflows in plain Python. Develop and debug
+                      them locally, deploy to production without changes.
+                    </small>
+                  </div>
+              </li>
+              <li>
+                  <img src="/images/hero/compute.svg" alt="" />
+                  <div>
+                    <p>Compute</p>
+                    <small>
+                      Leverage the cloud to execute functions at scale. Use GPUs,
+                      multiple cores, and large amounts of memory as needed. 
+                    </small>
+                  </div>
+              </li>
+              <li>
+                  <img src="/images/hero/data.svg" alt="" />
+                  <div>
+                    <p>Data</p>
+                    <small>
+                      Access data from data warehouses. Metaflow flows
+                      data across steps, versioning everything on the way.
+                    </small>
+                  </div>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section logos">
+      <h1>Metaflow is used by these companies and hundreds of others</h1>
+      <ul>
+        <li>
+          <img
+            src="/images/logos/23.svg"
+            width="88"
+            height="52"
+            alt="23 and me"
+          />
+        </li>
+        <li>
+          <img
+            src="/images/logos/netflix.svg"
+            width="102"
+            height="27"
+            alt="Netflix"
+          />
+        </li>
+        <li>
+          <img src="/images/logos/cnn.svg" width="59" height="27" alt="CNN" />
+        </li>
+        <li>
+          <img
+            src="/images/logos/coveo.svg"
+            width="107"
+            height="27"
+            alt="Coveo"
+          />
+        </li>
+        <li>
+          <img
+            src="/images/logos/realtor.svg"
+            width="109"
+            height="19"
+            alt="Realtor.com"
+          />
+        </li>
+        <li>
+          <img src="/images/logos/sap.svg" width="57" height="27" alt="SAP" />
+        </li>
+        <li>
+          <img
+            src="/images/logos/23.svg"
+            width="88"
+            height="52"
+            alt="23 and me"
+          />
+        </li>
+        <li>
+          <img
+            src="/images/logos/netflix.svg"
+            width="102"
+            height="27"
+            alt="Netflix"
+          />
+        </li>
+        <li>
+          <img src="/images/logos/cnn.svg" width="59" height="27" alt="CNN" />
+        </li>
+        <li>
+          <img
+            src="/images/logos/coveo.svg"
+            width="107"
+            height="27"
+            alt="Coveo"
+          />
+        </li>
+        <li>
+          <img
+            src="/images/logos/realtor.svg"
+            width="109"
+            height="19"
+            alt="Realtor.com"
+          />
+        </li>
+        <li>
+          <img src="/images/logos/sap.svg" width="57" height="27" alt="SAP" />
+        </li>
+      </ul>
+    </section>
+    <div class="full-width">
+      <section class="section scientists">
+        <h1 style="max-width: 480px">
+          Metaflow is built for data scientists and ML engineers, not just for machines.
+        </h1>
+        <ul>
+          <li>
+            <div></div>
+            <img src="/images/build.webp" width="100%" height="auto" alt="" />
+            <div>
+              <h2>Develop with Metaflow</h2>
+              <p>
+                Explore with notebooks, develop with Metaflow, and test and debug
+                locally. Results are stored and tracked automatically for easy
+                analysis.
+              </p>
+            </div>
+          </li>
+          <li class="line">
+            <img
+              src="/images/line-1.webp"
+              width="100%"
+              height="auto"
+              alt=""
+              style="position: absolute; max-width: 66%"
+            />
+          </li>
+          <li>
+            <div>
+              <h2>Scale out to the cloud</h2>
+              <p>
+                Break out from the confines of a laptop or a single notebook. Scale out
+                easily to the cloud, utilizing GPUs, multiple cores, and multiple instances
+                in parallel. Metaflow organizes the work for easy collaboration on the way.
+              </p>
+            </div>
+            <img src="/images/model.webp" width="100%" height="auto" alt="" />
+            <div></div>
+          </li>
+          <li class="line-2">
+            <img
+              src="/images/line-2.webp"
+              width="100%"
+              height="auto"
+              alt=""
+              style="position: absolute; max-width: 66%"
+            />
+          </li>
+          <li>
+            <div></div>
+            <img src="/images/deploy.webp" width="100%" height="auto" alt="" />
+            <div>
+              <h2>Deploy to production confidently</h2>
+              <p>
+                Deploy experiments to
+                production with a single click without changing anything in the code.
+                Add layers of fault-tolerance and validation as the project grows more
+                business-critical over time.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="section cloud">
+      <div class="section-para">
+        <h1>Bring your own Cloud</h1>
+        <p>
+          Get started easily on a laptop. When you are ready to scale, deploy the Metaflow stack
+          on your cloud account or on-premise Kubernetes cluster. Metaflow integrates
+          seamlessly with your existing infrastructure, security, and data governance
+          policies.
+        </p>
+        <p>
+          To get a taste of Metaflow in the cloud, try
+          <a href="https://outerbounds.com/docs/sandbox/">Metaflow Sandbox</a>
+          in the browser.
+        </p>
+      </div>
+      <ul>
+        <li>
+          <a href="https://outerbounds.com/engineering/deployment/aws-managed/introduction/">
+            <div><img src="/images/cloud-services/aws.webp" alt="" /></div>
+            <div>
+              <h2>AWS</h2>
+              <p>Deploy on EKS and S3, or AWS Batch & AWS Step Functions.</p>
+            </div></a
+          >
+        </li>
+        <li>
+          <a href="https://outerbounds.com/engineering/deployment/azure-k8s/deployment/">
+            <div><img src="/images/cloud-services/azure.webp" alt="" /></div>
+            <div>
+              <h2>Azure</h2>
+              <p>Deploy on AKS and Azure Blob Storage.</p>
+            </div></a
+          >
+        </li>
+        <li>
+          <a href="https://outerbounds.com/engineering/deployment/gcp-k8s/deployment/">
+            <div><img src="/images/cloud-services/gcp.webp" alt="" /></div>
+            <div>
+              <h2>Google Cloud</h2>
+              <p>Deploy on GKE and Google Cloud Storage.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://outerbounds.com/engineering/deployment/aws-k8s/deployment/">
+            <div><img src="/images/cloud-services/k8s.webp" alt="" /></div>
+            <div>
+              <h2>Kubernetes</h2>
+              <p>For maximum flexibility, deploy on a custom Kubernetes cluster.</p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+    <div class="full-width">
+      <section class="section netflix">
+        <div>
+          <div class="section-para">
+            <h1>Battle-hardened at Netflix</h1>
+            <p>
+              Metaflow was originally developed at Netflix to address the needs
+              of data scientists who work on demanding real-life data
+              science and ML projects. Netflix open-sourced Metaflow in 2019.
+            </p><p>
+              Today, Metaflow is used by hundreds of companies across industries,
+              powering diverse projects from state-of-the-art compute vision and NLP
+              to business-oriented data science, statistics, and operations research.
+            </p>
+          </div>
+          <img src="/images/netflix.svg" alt="" />
+        </div>
+        <ul>
+          <li>
+            <a href="https://netflixtechblog.com/open-sourcing-metaflow-a-human-centric-framework-for-data-science-fa72e04a5d9"
+              >Open-Sourcing Metaflow, a Human-Centric Framework for Data
+              Science</a
+            >
+          </li>
+          <li>
+            <a href="https://netflixtechblog.com/unbundling-data-science-workflows-with-metaflow-and-aws-step-functions-d454780c6280"
+              >Unbundling Data Science Workflows with Metaflow and AWS Step
+              Functions</a
+            >
+          </li>
+          <li>
+            <a href="https://netflixtechblog.com/open-sourcing-a-monitoring-gui-for-metaflow-75ff465f0d60"
+              >Open-Sourcing a Monitoring GUI for Metaflow, Netflix’s ML
+              Platform</a
+            >
+          </li>
+          <li>
+            <a href="https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f"
+              >Supporting content decision makers with machine learning</a
+            >
+          </li>
+        </ul>
+      </section>
+      <div class="section">
+        <hr />
+      </div>
+      <section class="section teams">
+        <h1 style="max-width: 480px">
+          How leading data science and ML teams use Metaflow
+        </h1>
+        <ul>
+          <li>
+            <a href="https://medium.com/23andme-engineering/machine-learning-eeee69d40736">
+              <div>
+                <img src="/images/logos/23.svg" alt="" />
+              </div>
+              <div>
+                <h2>Developing safe and reliable ML products at 23andMe</h2>
+                <p><i>Our complex, multi-stage workflows are codified and orchestrated using Metaflow.</i></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/cnn-digital/accelerating-ml-within-cnn-983f6b7bd2eb">
+              <div>
+                <img src="/images/logos/cnn.svg" alt="" />
+              </div>
+              <div>
+                <h2>Accelerating ML within CNN</h2>
+                <p><i>
+                   Our data science team believes they were able to test twice as many models in Q1 2021 as they did in all of 2020.
+                </i></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.rea-group.com/about-us/news-and-insights/blog/accelerating-experimentation-with-mlops/">
+              <div>
+                <img src="/images/logos/rea.svg" alt="" />
+              </div>
+              <div>
+                <h2>Accelerating experimentation with MLOps</h2>
+                <p><i>
+                  Metaflow helped us avoid the anti-pattern of needing to push code to find out if something works.
+                </i></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/realtor-com-innovation-blog/improving-data-science-processes-to-speed-innovation-at-realtor-com-b6b90fa530dc">
+              <div>
+                <img src="/images/logos/realtor.svg" alt="" />
+              </div>
+              <div>
+                <h2>
+                  Improving Data Science Processes to Speed Innovation at Realtor.com
+                </h2>
+                <p><i>
+                    The team has shaved months off the time it takes to build a productionized machine learning model.
+                </i></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="section highlights">
+      <h1>Recent Updates</h1>
+      <div>
+        <ul>
+          <li>
+            <a href="https://docs.metaflow.org/">
+              <h2>Metaflow on Google Cloud</h2>
+              <p>
+                Deploy and operate Metaflow on GCP.
+              </p>
+              <time datetime="2022-12-13" class="mono">December 13th, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.metaflow.org/">
+              <h2>Documentation updated</h2>
+              <p>
+                Enjoy a clearer learning path, more content.
+              </p>
+              <time datetime="2022-10-05" class="mono">October 5th, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://outerbounds.com/blog/metaflow-azure-machine-learning//">
+              <h2>Metaflow on Azure</h2>
+              <p>
+                Deploy and operate Metaflow on Microsoft Azure.
+              </p>
+              <time datetime="2022-10-05" class="mono">October 5th, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://outerbounds.com/docs/sandbox/">
+              <h2>New Metaflow Sandboxes</h2>
+              <p>
+                Test Metaflow and the infrastructure behind it in the browser.
+              </p>
+              <time datetime="2022-09-16" class="mono">September 16th, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://outerbounds.com/blog/book-launch-effective-data-science-infrastructure">
+              <h2>New book: Effective Data Science Infrastructure</h2>
+              <p>Learn the modern ML stack with Metaflow.</p>
+              <time datetime="2022-08-31" class="mono">August 31st, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.metaflow.org/api">
+              <h2>Metaflow API docs published</h2>
+              <p>A complete reference guide to all Metaflow APIs.</p>
+              <time datetime="2022-07-27" class="mono">July 27th, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://outerbounds.com/blog/five-ways-to-use-the-new-metaflow-tags">
+              <h2>Metaflow tags are now mutable</h2>
+              <p>
+                 Set up effective human workflows around Metaflow projects.
+              </p>
+              <time datetime="2022-06-21" class="mono">June 21st, 2022</time>
+            </a>
+          </li>
+          <li>
+            <a href="https://outerbounds.com/docs/data-science-welcome">
+              <h2>New Metaflow Resources</h2>
+              <p>A library of practial tips & how-to guides for Metaflow users.</p>
+              <time datetime="2022-06-01" class="mono">June 1st, 2022</time>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="full-width">
+      <section class="section real-life">
+        <img src="/images/real-life.webp" width="100%" height="auto" alt="" />
+        <h1 style="max-width: 480px">A framework for real-life data science and ML</h1>
+        <div class="button-group">
+          <a
+            class="button button-primary"
+            href="https://docs.metaflow.org/getting-started/install"
+            >Get Started</a
+          >
+          <a class="button button-secondary" href="http://slack.outerbounds.co/"
+            >Join Community</a
+          >
+        </div>
+      </section>
+    </div>
+    <footer class="section footer">
+      <div>
+        <img
+          alt="Metaflow"
+          width="144"
+          height="24"
+          src="/images/metaflow.svg"
+        />
+        <p>
+          Build and manage real-life data science and ML projects with Metaflow.
+        </p>
+        <small>&copy; 2019-2022 Netflix, Inc.</small>
+      </div>
+      <div>
+        <div>
+          <p><strong>Learn More</strong></p>
+          <ul>
+            <li>
+              <a href="https://docs.metaflow.org/introduction/why-metaflow"
+                >Why Metaflow</a
+              >
+            </li>
+            <li>
+              <a href="https://docs.metaflow.org/introduction/what-is-metaflow"
+                >What is Metaflow</a
+              >
+            </li>
+            <li>
+              <a href="https://outerbounds.com/docs/sandbox/"
+                >Metaflow Sandbox</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Resources</strong></p>
+          <ul>
+            <li>
+              <a href="https://docs.metaflow.org/">Documentation</a>
+            </li>
+            <li>
+              <a href="https://outerbounds.com/docs/data-science-welcome/">How-tos & Tutorials</a>
+            </li>
+            <li>
+              <a href="https://outerbounds.com/engineering/welcome/">
+                Guides for Engineers
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Community</strong></p>
+          <ul>
+            <li>
+              <a href="http://chat.metaflow.org/">Chat</a>
+            </li>
+            <li>
+              <a href="https://github.com/Netflix/metaflow">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js" type=""></script>
+  </body>
+</html>
