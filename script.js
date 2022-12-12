@@ -11,7 +11,7 @@ const List = function _List() {
     (List.state.id === "data" && "calc(5 * (-96px - 16px))")
   })">
     <li>
-        <img src="/images/hero/modeling.svg" alt="" />
+        <img src="images/hero/modeling.svg" alt="" />
         <div>
           <p>Modeling</p>
                     <small>
@@ -21,7 +21,7 @@ const List = function _List() {
         </div>
     </li>
     <li>
-        <img src="/images/hero/deployment.svg" alt="" />
+        <img src="images/hero/deployment.svg" alt="" />
         <div>
           <p>Deployment</p>
                     <small>
@@ -31,7 +31,7 @@ const List = function _List() {
         </div>
     </li>
     <li>
-        <img src="/images/hero/versioning.svg" alt="" />
+        <img src="images/hero/versioning.svg" alt="" />
         <div>
           <p>Versioning</p>
                     <small>
@@ -41,7 +41,7 @@ const List = function _List() {
         </div>
     </li>
     <li>
-        <img src="/images/hero/orchestration.svg" alt="" />
+        <img src="images/hero/orchestration.svg" alt="" />
         <div>
           <p>Orchestration</p>
                     <small>
@@ -51,7 +51,7 @@ const List = function _List() {
         </div>
     </li>
     <li>
-        <img src="/images/hero/compute.svg" alt="" />
+        <img src="images/hero/compute.svg" alt="" />
         <div>
           <p>Compute</p>
                     <small>
@@ -61,7 +61,7 @@ const List = function _List() {
         </div>
     </li>
     <li>
-        <img src="/images/hero/data.svg" alt="" />
+        <img src="images/hero/data.svg" alt="" />
         <div>
           <p>Data</p>
                     <small>
