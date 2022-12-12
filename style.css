@@ -27,6 +27,9 @@ body {
 
 #sandbox-link {
   background-color: var(--color-secondary);
+  padding: 10px 14px;
+  border-radius: 4px;
+  white-space: pre;
 }
 
 a {
@@ -185,6 +188,7 @@ li p {
 .header > nav {
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .header > nav a {
@@ -826,6 +830,16 @@ li p {
 
   .logos > ul {
     width: 2000px;
+  }
+
+}
+
+@media (max-width: 520px) {
+  #sandbox-link {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 15px;
   }
 }
 
