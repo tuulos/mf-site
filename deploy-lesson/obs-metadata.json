@@ -1,0 +1,88 @@
+{
+  "meta": {},
+  "data": {
+    "id": "tutorials",
+    "title": "Introduction to Metaflow",
+    "showPrimaryView": true,
+    "numbered": true,
+    "sections": [
+      {
+        "title": "Welcome",
+        "description": "Welcome to your personal data science workstation!",
+        "path": "./hello/flow.py",
+        "doc": "./hello/README.html",
+        "action": {
+          "type": "run",
+          "value": "./hello/flow.py",
+          "label": "Run Flow"
+        }
+      },
+      {
+        "title": "Creating Workflows",
+        "description": "Get familiar with the structure of Metaflow flows.",
+        "path": "./branch/flow.py",
+        "doc": "./branch/README.html",
+        "action": "./branch/flow.py"
+      },
+      {
+        "title": "Artifacts & Versioning",
+        "description": "See how Metaflow tracks experiments and versions data automatically.",
+        "path": "./versioning/flow.py",
+        "doc": "./versioning/README.html",
+        "action": {
+          "type": "run",
+          "value": "./versioning/flow.py"
+        }
+      },
+      {
+        "title": "Parallel Processing & Monitoring",
+        "description": "Scale out compute using foreaches.",
+        "path": "./foreach/flow.py",
+        "doc": "./foreach/README.html",
+        "action": {
+          "type": "run",
+          "value": "./foreach/flow.py"
+        }
+      },
+      {
+        "title": "Scaling Out to the Cloud",
+        "description": "Don't be limited to a single workstation - scale out to the cloud easily!",
+        "path": "./scaling/flow.py",
+        "doc": "./scaling/README.html",
+        "action": {
+          "type": "run",
+          "value": "./scaling/flow.py"
+        }
+      },
+      {
+        "title": "Production-Ready Environments",
+        "description": "Harden workflows for production with dependency management and monitoring.",
+        "path": "./deps/flow.py",
+        "doc": "./deps/README.html",
+        "action": {
+          "type": "run",
+          "value": "./deps/flow.py",
+          "preFlags": "--environment=conda --no-pylint"
+        }
+      },
+      {
+        "title": "Machine Learning In Action",
+        "description": "Train and test a real ML model with Metaflow.",
+        "path": "./model/flow.py",
+        "doc": "./model/README.html",
+        "action": {
+          "type": "run",
+          "value": "./model/flow.py",
+          "preFlags": "--environment=conda --no-pylint"
+        }
+      },
+      {
+        "title": "Deploy to Production",
+        "description": "Deploy a workflow to run automatically based on an external event.",
+        "path": "./deployment/deploy.ipynb",
+        "doc": "./deployment/README.html"
+      }
+    ],
+    "links": []
+  }
+}
