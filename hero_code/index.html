@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+  </head>
+  <body>
+    <!-- A root element for TypeIt to target. -->
+    <pre>
+<code id="myElement" class="language-python hljs" data-typeit-id="0385643"><span class="hljs-meta">@trigger(<span class="hljs-params">event=<span class="hljs-string">"data_update"</span></span>)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DataFlow</span>(<span class="hljs-title class_ inherited__">FlowSpec</span>):
+
+<span id="decostart" class="hljs-meta"></span><span id="decoend"></span>
+<span class="hljs-meta">    @step</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">train</span>(<span class="hljs-params">self</span>):
+        self.df = self.load_data()
+        self.model = train(self.df)</code>
+    </pre>
+
+
+    <script src="https://unpkg.com/typeit@8.8.4/dist/index.umd.js"></script>
+    <script>
+      new TypeIt("#decostart", {
+       cursor: false,
+       strings: [
+            "    @kubernetes(gpu=<span class='hljs-number'>4</span>, target=<span class='hljs-string'>'azure'</span>)",
+            "    @pypi(packages=<span class='hljs-string'>{'torch': '2.4.1'}</span>)",
+            "    @secrets(sources=[<span class='hljs-string'>'prod-db'</span>])",
+            "    @card(type=<span class='hljs-string'>'monitor_model'</span>)",
+            "    @checkpoint(interval=<span class='hljs-number'>30</span>)"
+       ],
+       startDelay: 10,
+       loop: true,
+       speed: 30,
+       nextStringDelay: 1000,
+     }).go();
+</script>
+  </body>
+</html>
